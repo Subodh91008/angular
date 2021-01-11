@@ -1,0 +1,12 @@
+.container{
+  width: 50%;
+  margin: 20px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.head{
+  float: right;
+  width: auto;
+  text-align: center;
+}

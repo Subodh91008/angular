@@ -1,0 +1,36 @@
+<div class="container form-control-sm" >
+
+<form (ngSubmit)="savestudent()" method="POST" >
+
+  <div class="form-group">
+    <label for="rn">Student id</label>
+    <input type="text" [(ngModel)]="Students.id"  id="rn" class="form-control" name="id" placeholder="Student id"  >
+  </div>
+
+
+  <div class="form-group">
+    <label for="rn1">RollNumber</label>
+    <input type="text" [(ngModel)]="Students.rollnumber" class="form-control" id="rn1" name="rollnumber" placeholder="rollnumber" >
+  </div>
+
+  <div class="form-group">
+    <label for="rn2">Name</label>
+    <input type="text" [(ngModel)]="Students.name" class="form-control" id="rn2" name="name" placeholder="student name" >
+
+  </div>
+  <div class="form-group">
+    <label for="rn3">Book Name</label>
+    <input type="text" [(ngModel)]="Students.book" class="form-control" id="rn3" name="book" placeholder="Book name" >
+
+  </div>
+  <div class="form-group">
+    <label for="rn4">Subject Fees</label>
+    <input type="text" [(ngModel)]="Students.fees" class="form-control" id="rn4" name="fees" placeholder="fees" >
+
+  </div>
+<button type="submit" class="btn btn-success">Register Student</button>
+</form>
+</div>
+<br>
+<h1 class="head btn-success" >{{msg}}</h1>
+

@@ -1,0 +1,31 @@
+<p>all-student works!</p>
+
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">StudentID</th>
+        <th scope="col">rollnumber</th>
+        <th scope="col">Student Name</th>
+        <th scope="col">Subject</th>
+        <th scope="col">Fees </th>
+        <th>Delete Operation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let s of students" >
+        <td>{{s.id}}</td>
+        <td>{{s.rollnumber}}</td>
+        <td>{{s.name}}</td>
+        <td>{{s.book}}</td>
+        <td>{{s.fees}}</td>
+        <td><button (click)="removerecord(s.id)" class="btn btn-danger">Delete</button></td>
+      </tr>
+
+    </tbody>
+  </table>
+<div class="container"></div>
+
+<h1>{{message}}</h1>
+
+
