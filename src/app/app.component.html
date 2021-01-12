@@ -1,16 +1,41 @@
-<nav class="navbar navbar-expand-lg navbar-light btn-danger" >
 
+<nav class=" navbar navbar-expand-lg
+navbar-light btn-danger fixed-top py-lg-0 ">
 
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" routerLink="home" >Registration page <span class="sr-only">(current)</span></a>
+<a class="navbar-brand" href="#">
 
-      <a class="nav-item nav-link active" routerLink="/getall">View All </a>
+    <!-- Add logo with size of 90*80 -->
+    <img src="assets/123456.jpg" class="rounded-circle float-right" alt="Cinque Terre"
+    width="90" height="80" alt=""/>
+</a>
 
+<button class="navbar-toggler" type="button"
+        data-toggle="collapse"
+        data-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
 
-  </div>
+        <span class="navbar-toggler-icon"></span>
+</button>
 
+<div class="collapse navbar-collapse"
+        id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-item nav-link active" routerLink="home" ><h2>Registration page </h2><span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link active" routerLink="/getall"><h2>View All</h2> </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Courses</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+        </li>
+    </ul>
+</div>
 </nav>
-
-
 
 <router-outlet></router-outlet>
