@@ -1,9 +1,5 @@
 .container{
-  width: 50%;
-  margin: 20px;
-  align-items: center;
-  align-content: center;
-  text-align: center;
+
   margin-top: 100px;
 }
 .head{
@@ -14,4 +10,8 @@
 h1{
   text-align: center;
   background: violet;
+}
+form
+{
+    text-align: "center";
 }
